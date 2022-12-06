@@ -1,0 +1,125 @@
+.container {
+
+    .header {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 180px;
+
+        .logo {
+            i {
+
+                padding-top: 10px;
+                color: map-get($colors, secondary);
+            }
+
+        }
+
+        div.header-container {
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+
+
+
+            .nav {
+
+                width: 80%;
+
+                ul {
+                    list-style: none;
+                    display: inline-block;
+
+                    li {
+                        display: inline;
+                    }
+
+                    a {
+                        padding: 0 20px;
+                        font-size: 1.15rem;
+                        transition: all ease 0.6s;
+                    }
+
+                    a:hover {
+                        padding: 8px 20px;
+                        color: black;
+                        background-color: map-get($colors, secondary);
+                        border-radius: 16px;
+                    }
+
+                }
+
+                input {
+                    border-radius: 16px;
+                    border-style: none;
+                    padding: 5px 10px;
+                    width: 320px;
+                    margin-left: 25px;
+                    background-image: url("searchicon.png");
+                    background-repeat: no-repeat;
+                    background-position: 10px 3px;
+                }
+            }
+        }
+
+
+    }
+}
+
+div.overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: map-get($colors, secondary);
+    overflow-y: hidden;
+    transition: 0.6s;
+
+    #close-menu {
+        position: absolute;
+        top: 25px;
+        right: 45px;
+    }
+
+    #close-menu:hover,
+    #close-menu:focus {
+        color: rgb(6, 6, 6);
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 20px;
+        width: 60%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            padding: 32px 0;
+            font-size: 2rem;
+            color: map-get($colors, primary);
+            transition: all ease 0.7s;
+
+        }
+
+        a:hover,
+        a:focus {
+            color: rgb(8, 7, 7);
+        }
+
+    }
+}
+
+.footer {
+    position: absolute;
+    z-index: -999;
+    bottom: 0;
+    width: 100%;
+}

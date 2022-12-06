@@ -1,0 +1,29 @@
+$colors: (
+    "primary":#ded8d8,
+    "secondary":#483100,
+);
+
+@each $key,
+$val in $colors {
+    .text-#{$key} {
+        color: $val;
+    }
+
+    // lightness
+    @for $i from 1 through 9 {
+        .text-#{$key}-light-#{$i} {
+            color: mix(white, $val, $i*10);
+        }
+
+    }
+
+    // darkness
+    @for $i from 1 through 9 {
+        .text-#{$key}-dark-#{$i} {
+            color: mix(black, $val, $i*10);
+        }
+    }
+
+
+
+}

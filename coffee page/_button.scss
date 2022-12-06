@@ -1,0 +1,44 @@
+// styling for buttons
+@use 'sass:math';
+
+%button-style {
+    border: 2px solid map-get($colors, secondary);
+    background-color: map-get($colors, secondary);
+    padding: $button-padding;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-size: 1rem;
+    transition: all ease 0.7s;
+}
+
+.button1 button {
+
+    @extend %button-style;
+}
+
+.button1 button:hover {
+    border-style: none;
+    background-color: #ffae00;
+    color: black;
+}
+
+
+
+.button2 {
+
+    button {
+        @extend %button-style;
+    }
+}
+
+.button2 button:hover {
+    border-style: none;
+    background-color: #ffae00;
+    color: black;
+}
+
+.footer {
+    i:hover {
+        border-color: #ffae00;
+    }
+}

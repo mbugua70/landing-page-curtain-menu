@@ -1,0 +1,179 @@
+// @media screen and (min-width:996px) {
+
+// }
+
+// media query for the navicon
+.menu-bar2 {
+    i {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top: 5px;
+        right: 80px;
+        opacity: 0;
+    }
+}
+
+.menu-bar1 {
+    i {
+        position: absolute;
+        z-index: 999;
+        top: 5px;
+        right: 80px;
+        opacity: 1;
+    }
+
+    i:hover {
+        color: #ffae00;
+    }
+
+}
+
+@media screen and (max-width:1171px) {
+    body {
+        max-height: 100vh;
+    }
+
+    .header {
+        div.header-container {
+            max-width: 98%;
+            padding-left: 10px;
+
+            .nav {
+                min-width: 96%;
+            }
+        }
+    }
+
+    .main {
+        .button-flex {
+            min-width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:1006px) {
+    .header {
+        .nav {
+            min-width: 98%;
+
+            input {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:996px) {
+    .header {
+        div.header-container {
+            .nav {
+
+                a,
+                input {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    /*.menu-bar2 {
+        i {
+            position: absolute;
+            z-index: 999;
+            right: 80px;
+            opacity: 1;
+            }
+        }*/
+
+
+
+}
+
+@media screen and (max-width:920px) {
+    div.main {
+        min-width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #click-el {
+        right: 15px;
+    }
+
+    div.main {
+        min-width: 80%;
+        margin: 200px auto;
+
+    }
+}
+
+@media screen and (max-width:537px) {
+    div.main {
+        min-width: 98%;
+        margin: 160px auto;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        div.icons {
+            margin-left: 100px;
+        }
+    }
+
+}
+
+@media screen and (max-width:438px) {
+    .main {
+        div.button-flex {
+            width: 400px;
+        }
+    }
+
+}
+
+@media screen and (max-width:412px) {
+    div.header-container {
+        display: block;
+
+        div.logo {
+            padding-left: 20px;
+        }
+
+        #click-el {
+            right: 15px;
+        }
+    }
+
+    .main {
+        div.button-flex {
+            min-width: 399px;
+        }
+    }
+}
+
+@media screen and (max-width:390px) {
+    div.header-container {
+        display: block;
+
+        div.logo {
+            padding-left: 20px;
+        }
+
+        #click-el {
+            right: 15px;
+        }
+    }
+
+    .main .button-flex {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-height:1360px) {
+    html {
+        min-height: 100vh;
+    }
+}

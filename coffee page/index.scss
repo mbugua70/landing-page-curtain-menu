@@ -1,0 +1,64 @@
+// variables
+@import 'variables';
+
+//color pallette
+@import 'colors';
+
+// base for body,*,html
+@import 'base';
+
+// buttons ,links
+@import 'button';
+
+@import 'utilities';
+
+//mediaquary
+@import 'mediaQ';
+
+.main {
+    margin-top: 200px;
+    width: 50%;
+    margin-left: 180px;
+
+    h1 {
+        font-size: $main-header-font-size;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .sub-title {
+        margin-top: 0;
+        padding-top: 10px;
+        font-size: $main-subtitle-font-size;
+        margin-left: 4px;
+    }
+
+    .article {
+        margin-left: 4px;
+        max-width: 512px;
+        white-space: wrap;
+        font-size: $base-font-size;
+    }
+
+    .button-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 60%;
+    }
+
+}
+
+.footer {
+    .icons {
+        margin: 0 0 0 180px;
+    }
+
+    i {
+        transition: all ease 0.7s;
+        margin-right: 10px;
+        padding: 3px;
+        border: 2px solid map-get($colors, secondary);
+        border-radius: 6px;
+    }
+}
